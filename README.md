@@ -1,4 +1,4 @@
-# API Display Project
+# Weather API Project
 
 This project is designed to fetch and display weather data from the Open Meteo API. It consists of a simple web application that retrieves weather information based on geographical coordinates and displays it in a user-friendly format.
 
@@ -43,6 +43,7 @@ This project does not require any external libraries or frameworks. It uses stan
 - You can modify the geographical coordinates in the JavaScript file to get weather data for different locations.
 
 ## License
+
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
