@@ -23,7 +23,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```
-   git clone <repository-url>
+   git clone https://github.com/Nickdev8/api-display-project.git
    cd api-display-project
    ```
 
@@ -48,4 +48,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Credits
 
-This project was created by [Your Name]. All credit goes to [Your Name].
+This project was created by Nick Esselman.
