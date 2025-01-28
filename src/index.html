@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API Display</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <canvas id="weatherChart"></canvas>
+        <div class="weather-info">
+            <p><strong>Weather Code:</strong> <span id="weatherCode"></span></p>
+            <div class="sunrise-sunset">
+                <div>
+                    <img src="sunrise-morning-svgrepo-com.svg" alt="Sunrise" class="sun-icon">
+                    <span id="sunrise"></span>
+                </div>
+                <div>
+                    <img src="sunset-morning-svgrepo-com.svg" alt="Sunset" class="sun-icon">
+                    <span id="sunset"></span>
+                </div>
+            </div>
+            <p><strong>Rain Sum:</strong> <span id="rainSum"></span></p>
+        </div>
+        <div class="api-url-container">
+            <input type="text" id="apiUrl" value="https://api.open-meteo.com/v1/forecast?latitude=52.3808&longitude=4.6368&hourly=temperature_2m,weather_code,surface_temperature&daily=weather_code,sunrise,sunset,rain_sum,wind_direction_10m_dominant&timezone=Europe%2FLondon&forecast_days=1&models=knmi_seamless" readonly>
+            <button id="copyButton" onclick="copyApiUrl()">Copy</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
